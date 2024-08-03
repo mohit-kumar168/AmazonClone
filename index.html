@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazon Clone</title>
+</head>
+<body class="h-100 w-100">
+    <nav id="nav-container">
+        <div class="bg-slate-950">
+            <div class="flex items-center">
+                <div class="h-15 w-35 m-4 border-b-white border-2 rounded-sm">
+                    <img class="h-10 w-25 p-2" src="./assets/Amazon-Logo.png" alt="">
+                </div>
+                <div class="w-30 flex justify-center items-center pr-4 hover:border-b-white hover:border-2 rounded-md  cursor-pointer">
+                    <span class="pr-2 pb-2 self-end">
+                        <svg class="h-4 w-4 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </span>
+                    <div>
+                        <p class="text-white text-xs">Deliver to</p>
+                        <p class="text-white font-bold">India</p>
+                    </div>
+                </div>
+                <div class="w-100 h-10 text-white flex items-center border-b-gray-400 border-1 rounded-md pl-2">
+                    <div class="w-[50px] h-full bg-[#D4D4D4] flex justify-center items-center rounded-l-md cursor-pointer">
+                        <p class=" text-slate-950 text-xs">All</p>
+                        <span class="pl-1">
+                            <svg class="h-4 w-4 text-[#A7ACB2]"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="w-[500px] flex items-center justify-start p-2 bg-white">
+                        <p><p class="text-slate-400">Search Amazon</p></p>
+                    </div>
+                    <span class="w-10 h-full bg-[#F3A847] rounded-r-md flex items-center justify-center cursor-pointer">
+                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="text-white flex justify-center items-center gap-8">
+                    <div class="flex items-center ml-10 pt-4  hover:border-b-white hover:border-2 rounded-md  cursor-pointer">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.34em" height="1em" viewBox="0 0 640 480">
+                                <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                                <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"/>
+                                <path fill="#192f5d" d="M0 0h364.8v258.5H0"/>
+                                <marker id="flagUs4x30" markerHeight="30" markerWidth="30">
+                                    <path fill="#fff" d="m14 0l9 27L0 10h28L5 27z"/>
+                                </marker>
+                                <path fill="none" marker-mid="url(#flagUs4x30)" d="m0 0l16 11h61h61h61h61h60L47 37h61h61h60h61L16 63h61h61h61h61h60L47 89h61h61h60h61L16 115h61h61h61h61h60L47 141h61h61h60h61L16 166h61h61h61h61h60L47 192h61h61h60h61L16 218h61h61h61h61h60z"/>
+                            </svg>
+                        </span>
+                        <p class="font-bold text-sm">EN</p>
+                        <span>
+                            <svg class="h-4 w-4 text-[#A7ACB2]"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+
+                    </div>
+                    <div class="flex justify-center items-center  hover:border-b-white hover:border-2 rounded-md  cursor-pointer">
+                        <div>
+                            <p class="font-semibold text-xs">hello, sign in</p>
+                            <p class="font-bold text-sm">Accounts & Lists</p>
+                        </div>
+                        <span>
+                            <svg class="h-4 w-4 text-[#A7ACB2]"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class=" hover:border-b-white hover:border-2 rounded-md  cursor-pointer">
+                        <p class="font-semibold text-xs">return</p>
+                        <p class="font-bold text-sm">& Orders</p>
+                    </div>
+                    <div class="flex justify-center items-center  hover:border-b-white hover:border-2 rounded-md  cursor-pointer">
+                        <p>
+                            <span>
+                                <svg class="h-8 w-8 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                </svg>
+                            </span>
+                        </p>
+                        <p class="font-bold text-sm">Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-10 bg-[#232F3E] text-white flex justify-start items-center">
+            <div class="flex items-center justify-start ml-5 hover:border-b-white hover:border-2 rounded-md  cursor-pointer">
+                <span>
+                    <svg class="h-6 w-6 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                      </svg>
+                      
+                </span>
+                <p class="font-bold">All</p>
+            </div>
+            <div class="pl-5 ">
+                <p class="hover:border-b-white hover:border-2 rounded-md  cursor-pointer">Today's Deal</p>
+            </div>
+            <div class="pl-5">
+                <p class="hover:border-b-white hover:border-2 rounded-md  cursor-pointer">Cusomer Service</p>
+            </div>
+            <div class="pl-5">
+                <p class="hover:border-b-white hover:border-2 rounded-md  cursor-pointer">Registry</p>
+            </div>
+            <div class="pl-5">
+                <p class="hover:border-b-white hover:border-2 rounded-md  cursor-pointer">Gift Cards</p>
+            </div>
+            <div class="pl-5">
+                <p class="hover:border-b-white hover:border-2 rounded-md  cursor-pointer">Sell</p>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div  class="relative">
+            <img class="h-[30vw] w-full" src="./assets/page1-bg.jpg" alt="">
+            <div class="absolute bg-[#F5F6F6] h-8 w-[95.6vw] ml-7 mr-2 bottom-[1vw] flex justify-center items-center text-sm font-semibold">
+                <p class="">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a class="decoration-0 hover:text-blue-500" href="#">Click here to go to amazon.in</a></p>
+            </div>
+        </div>
+
+        <main class="bg-[#FEC4D2] pt-2 pl-5">
+            <div class="flex justify-around">
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-xl font-bold pl-5 pt-2">Gaming accessiores</h1>
+                    <div class="grid grid-rows-2 grid-cols-2">
+                        <div>
+                            <img class="h-[125px] w-[140px]" src="./assets/headset.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Headsets</p>
+                        </div>
+                        <div>
+                            <img class="h-[125px] w-[140px]" src="./assets/Keyboard.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Keyboard</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px]" src="./assets/Mouse.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Mouse</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px]" src="./assets/Chair.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Chairs</p>
+                        </div>
+                    </div>
+                    <a class="pl-5 pb-3 hover:text-blue-400 text-[1vw]" href="#">See more</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Shop deals in Fashion</h1>
+                    <div class="grid grid-rows-2 grid-cols-2">
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-4 pr-2" src="./assets/W_BOTTOMS.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Jeans under $50</p>
+                        </div>
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-1 pr-4" src="./assets/W_TOPS.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Tops under $25</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-4 pt-2 pr-2" src="./assets/W_DRESSES.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Dresses under $30</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-1 pt-2 pr-4" src="./assets/W_SHOES.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Shoes under $50</p>
+                        </div>
+                    </div>
+                    <a class="pl-5 pb-3 hover:text-blue-400 text-[1vw]" href="#">See all deals</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Refresh your space</h1>
+                    <div class="grid grid-rows-2 grid-cols-2">
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-4 pr-2" src="./assets/dining.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Headsets</p>
+                        </div>
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-1 pr-4" src="./assets/home.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Keyboard</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-4 pt-2 pr-2" src="./assets/kitchen.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Mouse</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-1 pt-2 pr-4" src="./assets/health-beauty.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Chairs</p>
+                        </div>
+                    </div>
+                    <a class="pl-5 pb-3 hover:text-blue-400 text-[1vw]" href="#">See more</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Deals in PCs</h1>
+                    <div>
+                        <img class="h-[300px] w-[270px] pl-5" src="./assets/cpu.jpg" alt="">
+                    </div>
+                    <a class="pl-5 pb-3 hover:text-blue-400 text-[1vw]" href="#">Shop now</a>
+                </div>
+            </div>
+
+            <div class="flex justify-around mt-5">
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Toys under $25</h1>
+                    <div>
+                        <img class="h-[300px] w-[270px] pl-5" src="./assets/toy.jpg" alt="">
+                    </div>
+                    <a class="pl-5 pb-2 hover:text-blue-400 text-[1vw]" href="#">Shop now</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Fashion trends you like</h1>
+                    <div class="grid grid-rows-2 grid-cols-2">
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-4 pr-2" src="./assets/dresses.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Dresses</p>
+                        </div>
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-1 pr-4" src="./assets/knit.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Knits</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-4 pt-2 pr-2" src="./assets/jacket.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Jackets</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-1 pt-2 pr-4" src="./assets/jewelry.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Jewelry</p>
+                        </div>
+                    </div>
+                    <a class="pl-5 pb-2 hover:text-blue-400 text-[1vw]" href="#">Explore more</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Beauty steals under $25</h1>
+                    <div>
+                        <img class="h-[300px] w-[270px] pl-5" src="./assets/beauty.jpg" alt="">
+                    </div>
+                    <a class="pl-5 pb-2 hover:text-blue-400 text-[1vw]" href="#">Shop now</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Home décor under $50</h1>
+                    <div>
+                        <img class="h-[300px] w-[270px] pl-5" src="./assets/homedecor.jpg" alt="">
+                    </div>
+                    <a class="pl-5 pb-2 hover:text-blue-400 text-[1vw]" href="#">Shop now</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5 ml-2 mr-2">
+                <h1 class="p-4 pl-6 text-[1.7vw] font-bold">Best Sellers in Cell Phones & Accessories</h1>
+               <div class="flex justify-center items-center gap-10">
+                <img class="h-[180px] w-[165px]" src="./assets/phone-accesseries1.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/phone-accesseries2.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/phone-accesseries3.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/phone-accesseries4.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/phone-accesseries5.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/phone-accesseries6.jpg" alt="">
+               </div>
+            </div>
+            
+            <div class="bg-white m-5 ml-2 mr-2">
+                <h1 class="p-4 pl-6 text-[1.7vw] font-bold">Best Sellers in Computers & Accessories</h1>
+               <div class="flex justify-center items-center gap-10">
+                <img class="h-[180px] w-[165px]" src="./assets/ComputersAccessories1.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/ComputersAccessories2.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/ComputersAccessories3.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/ComputersAccessories4.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/ComputersAccessories5.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/ComputersAccessories6.jpg" alt="">
+               </div>
+            </div>
+
+            <div class="flex justify-around">
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Gaming merchandise</h1>
+                    <div class="grid grid-rows-2 grid-cols-2">
+                        <div>
+                            <img class="h-[125px] w-[140px]" src="./assets/Apparel.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Apparels</p>
+                        </div>
+                        <div>
+                            <img class="h-[125px] w-[140px]" src="./assets/Hat.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">hats</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px]" src="./assets/actionFigures.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Action Figures</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px]" src="./assets/Mug.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Mugs</p>
+                        </div>
+                    </div>
+                    <a class="pl-5 pb-3 hover:text-blue-400 text-[1vw]" href="#">See more</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2 pr-2">Shop activity trackers and smartwatches</h1>
+                    <div>
+                        <img class="h-[280px] w-[270px] pl-5" src="./assets/SmartWatch.jpg" alt="">
+                    </div>
+                    <a class="pl-5 pb-2 hover:text-blue-400 text-[1vw]" href="#">Shop now</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Warm & welcoming decor</h1>
+                    <div class="grid grid-rows-2 grid-cols-2">
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-4 pr-2" src="./assets/Wreaths_Decor.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Wreaths & garlands</p>
+                        </div>
+                        <div>
+                            <img class="h-[125px] w-[140px] pl-1 pr-4" src="./assets/Oct_Decor.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Outdoor decor</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-4 pt-2 pr-2" src="./assets/Pillows_Decor.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Pillow & throws</p>
+                        </div>
+                        <div>
+                            <img class="h-[130px] w-[140px] pl-1 pt-2 pr-4" src="./assets/wall_Decor.jpg" alt="">
+                            <p class="pl-5 text-xs font-semibold">Wall art & mirrors</p>
+                        </div>
+                    </div>
+                    <a class="pl-5 pb-3 hover:text-blue-400 text-[1vw]" href="#">Shop more fall finds</a>
+                </div>
+
+                <div class="bg-white h-[400px] w-[290px] flex flex-col justify-between">
+                    <h1 class="text-[1.7vw] font-bold pl-5 pt-2">Great prices on shoes</h1>
+                    <div>
+                        <img class="h-[300px] w-[270px] pl-5" src="./assets/shoes.jpg" alt="">
+                    </div>
+                    <a class="pl-5 pb-2 hover:text-blue-400 text-[1vw]" href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="bg-white m-5 ml-2 mr-2">
+                <h1 class="p-4 pl-6 text-[1.7vw] font-bold">Most wished for in Movies & TV</h1>
+               <div class="flex justify-center items-center gap-10">
+                <img class="h-[180px] w-[165px]" src="./assets/movie1.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/movie2.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/movie3.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/movie4.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/movie5.jpg" alt="">
+                <img class="h-[180px] w-[165px]" src="./assets/movie6.jpg" alt="">
+               </div>
+            </div>
+        </main>
+
+        <div class="h-[100px] flex flex-col justify-center items-center m-2 border-b-black border-[1px] rounded-md">
+            <div class="text-[1vw] font-semibold">See personalized recommendations</div>
+            <button class="w-[20vw] bg-[#FFD978] rounded-md">Sign in</button>
+            <div class="text-[0.8vw] font-semibold">New customer? <a class="decoration-0 hover:text-blue-500 cursor-pointer" href="#">Start here.</a></div>
+        </div>
+    </header>
+
+    <footer class="">
+        <div  class="w-[100%] bg-[#37475A] text-center text-white">
+            <a href="#nav-container">Back to top</a>
+        </div>
+
+        <div class="bg-[#232F3E] flex justify-around pt-10 pb-5">
+            <div class="text-white">
+                <p class="font-bold text-[1.3vw]">Get to Know Us</p>
+                <p class="text-[1vw]">Careers</p>
+                <p class="text-[1vw]">Blog</p>
+                <p class="text-[1vw]">About Amazon</p>
+                <p class="text-[1vw]">Investor Relations</p>
+                <p class="text-[1vw]">Amazon Devises</p>
+                <p class="text-[1vw]">Amazon Science</p>
+            </div>
+
+            <div class="text-white">
+                <p class="font-bold text-[1.3vw]">Make Money with Us</p>
+                <p class="text-[1vw]">Sell Product on Amazon</p>
+                <p class="text-[1vw]">Sell on Amazon Business</p>
+                <p class="text-[1vw]">Sell Apps on Amazon</p>
+                <p class="text-[1vw]">Become an Affiliate</p>
+                <p class="text-[1vw]">Advertise your products</p>
+                <p class="text-[1vw]">Self-Publish with Us</p>
+                <p class="text-[1vw]">Host on Amazon Hub</p>
+                <p class="text-[1vw]">See More Make Money with Us</p>
+            </div>
+
+            <div class="text-white">
+                <p class="font-bold text-[1.3vw]">Amazon Payment Products</p>
+                <p class="text-[1vw]">Amazon Business Card</p>
+                <p class="text-[1vw]">Shop with Points</p>
+                <p class="text-[1vw]">Reload Your Balance</p>
+                <p class="text-[1vw]">Amazon Currency Converter</p>
+            </div>
+
+            <div class="text-white">
+                <p class="font-bold text-[1.3vw]">Let Us Help You</p>
+                <p class="text-[1vw]">Amazon and Covid-19</p>
+                <p class="text-[1vw]">Your Account</p>
+                <p class="text-[1vw]">Your Orders</p>
+                <p class="text-[1vw]">Shipping Rates & Polices</p>
+                <p class="text-[1vw]">Return & Replacements</p>
+                <p class="text-[1vw]">Manage Your Contents & Devices</p>
+                <p class="text-[1vw]">Help</p>
+            </div>
+        </div>
+
+        <div class="bg-[#131A22] text-white pt-5 pr-20 pl-20">
+            <div class="flex justify-around">
+                <div>
+                    <p class="text-[1vw] font-bold">Amazon Music</p>
+                    <p class="text-[0.98vw]">Stream millions <br>of songs</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Amazon Ads</p>
+                    <p class="text-[0.98vw]">Reach customers <br>wherever they <br>spend their time</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">6pm</p>
+                    <p class="text-[0.98vw]">Score deals <br>on fashion brands</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">AbeBooks</p>
+                    <p class="text-[0.98vw]">Books, art <br>& collectibles</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">ACX</p>
+                    <p class="text-[0.98vw]">Audiobook Publishing <br>Made Easy</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Sell on Amazon</p>
+                    <p class="text-[0.98vw]">Start a Selling <br>Account</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Amazon <br>Business</p>
+                    <p class="text-[0.98vw]">Everything For <br>Your Business</p>
+                </div>
+            </div>
+
+            <div class="flex justify-around pt-3">
+                <div>
+                    <p class="text-[1vw] font-bold">AmazonGlobal</p>
+                    <p class="text-[0.98vw]">Ship Orders <br>Internationally</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Home Services</p>
+                    <p class="text-[0.98vw]">Experienced Pros <br>Happiness <br>Guarantee</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Amazon Web <br>Services</p>
+                    <p class="text-[0.98vw]">Scalable Cloud <br>Computing <br>Services</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Audible</p>
+                    <p class="text-[0.98vw]">Listen to Books & <br>Original <br>Audio <br>Performances</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Box Office Mojo</p>
+                    <p class="text-[0.98vw]">Find Movie <br>Box Office Data</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">Goodreads</p>
+                    <p class="text-[0.98vw]">Book reviews <br>& <br>recommendations</p>
+                </div>
+                <div>
+                    <p class="text-[1vw] font-bold">IMDb</p>
+                    <p class="text-[0.98vw]">Movies, TV <br>& Celebrities</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-10">
+                <pre class="text-[1vw]">Conditions of Use      Privacy Notice      Consumer Health Data Privacy Disclosure     Your Ads Privacy Choices </pre>
+                <p class="text-[1vw] pb-8">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
